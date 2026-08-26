@@ -1,0 +1,53 @@
+generated: '2026-08-25'
+method: searched
+probe: true
+source: https://trust.merlyn.org/
+url: https://trust.merlyn.org/
+platform: SafeBase by Drata
+note: >-
+  trust.merlyn.org is a SafeBase (Drata) hosted trust center. It answers our crawler with a
+  Cloudflare interstitial (HTTP 403, "Just a moment..."), so the page is LIVE but bot-challenged;
+  the contents below were read through a browser-agent fetch of the same URL. Some documents
+  (SOC 2 report, pentest report, network diagram) are gated behind an NDA/request flow typical of
+  SafeBase; the certification list and the security contact are public on the landing page.
+certifications:
+- SOC 2
+- SOC 3
+regulatory_frameworks:
+- COPPA
+- FERPA
+- GDPR
+documents:
+- name: SOC 2 Report
+  access: request/NDA
+- name: Pentest Report
+  access: request/NDA
+- name: Network Diagram
+  access: request/NDA
+- name: Merlyn Security Flyer
+  access: request/NDA
+- name: Merlyn Privacy Flyer
+  access: request/NDA
+subprocessors:
+- Amazon
+- Google Cloud
+- Microsoft
+- Salesforce
+security_contact: security@merlyn.org
+product_security:
+- multi-factor authentication
+- single sign-on (SSO)
+evidence:
+- source: https://trust.merlyn.org/
+  http_status: 403
+  note: >-
+    Cloudflare bot challenge to the raw crawler; page demonstrably exists and renders for a
+    browser agent. Certifications, subprocessors, document list and security contact read from
+    that render.
+  keywords:
+  - soc 2
+  - soc 3
+  - coppa
+  - ferpa
+  - gdpr
+  - trust center

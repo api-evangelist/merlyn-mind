@@ -1,0 +1,27 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://www.merlyn.org/ (full navigation), https://www.merlyn.org/sitemap.xml (97 URLs, no
+  pricing page), https://www.merlyn.org/schools, https://www.merlyn.org/teachers,
+  https://www.merlyn.org/start
+plan_count: 0
+currency: null
+note: >-
+  Merlyn Mind publishes NO pricing. The site has no /pricing or /plans page — the full sitemap
+  (97 URLs, fetched 2026-08-25) contains none, and the primary navigation offers no pricing entry.
+  Merlyn Origin and Merlyn Display are sold to school districts through a demo/quote motion
+  (https://www.merlyn.org/lp-demo, https://www.merlyn.org/start) and through interactive-panel
+  OEM partners such as Promethean and Newline, where Merlyn Display ships bundled with the panel.
+  There is no self-serve tier, no published list price and no API pricing of any kind — Merlyn Mind
+  has no public API product to price.
+plans: []
+evidence:
+- url: https://www.merlyn.org/sitemap.xml
+  status: 200
+  note: 97 URLs, none matching /pricing, /plans or /cost
+- url: https://www.merlyn.org/start
+  status: 200
+  note: get-started / contact flow, no prices
+- url: https://www.merlyn.org/lp-demo
+  status: 200
+  note: demo request landing page

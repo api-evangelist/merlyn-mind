@@ -1,17 +1,37 @@
 aid: merlyn-mind
 name: Merlyn Mind
-description: 'Merlyn Mind is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Merlyn Mind is a New York-based deep-tech generative AI company, founded in 2018, that
+  builds domain-specific AI for K-12 education. Its products are Merlyn Origin, a software
+  AI assistant that runs on a teacher's classroom computer, and Merlyn Display, the same
+  assistant embedded in interactive flat panels from partners such as Promethean and Newline.
+  The company trained its own education-specific large language models and published several
+  of them openly on Hugging Face (merlyn-education-safety, merlyn-education-corpus-qa,
+  merlyn-education-teacher-assistant), and runs an AI Labs research group that publishes at
+  NeurIPS and other conferences. Merlyn integrates with classroom tooling including the Canvas
+  LMS. Merlyn Mind was acquired by Mynd.ai, Inc. (NYSE American, MYND), the parent of Promethean,
+  in a deal completed 9 September 2025, and continues to operate under the merlyn.org brand with
+  offices in New York, Irvine and Bangalore. Merlyn Mind publishes no public developer program:
+  there is no developer portal, no API reference, no SDK and no machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/merlyn-mind/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/653ff772c8cabb196596168a/653ff772c8cabb196596191e_merlynorg.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-parent-company: Mynd.ai, Inc. (NYSE American, MYND) — acquisition completed 2025-09-09
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Artificial Intelligence
+- Education
+- EdTech
+- K-12
+- Large Language Models
+- Voice Assistant
+- Classroom Technology
+- Machine Learning
+- Responsible AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,59 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Security
+  url: security/merlyn-mind-vulnerability-disclosure.yml
+- type: VulnerabilityDisclosure
+  url: security/merlyn-mind-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/merlyn-mind-conformance.yml
+- type: Compliance
+  url: security/merlyn-mind-trust-center.yml
+- type: LLMsTxt
+  url: llms/merlyn-mind-llms.txt
+- type: TrustCenter
+  url: security/merlyn-mind-trust-center.yml
+- type: DomainSecurity
+  url: security/merlyn-mind-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/merlyn-mind_stock/
+  url: https://www.merlyn.org/
+- type: Blog
+  url: https://www.merlyn.org/blogs
+- type: Support
+  url: https://www.merlyn.org/support
+- type: HelpCenter
+  url: https://merlynorigin.zendesk.com/hc/en-us
+- type: Login
+  url: https://portal.merlyn.org/
+- type: Console
+  url: https://manage.merlyn.org/
+- type: TermsOfService
+  url: https://www.merlyn.org/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.merlyn.org/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/MerlynMind
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Merlyn Mind sells Merlyn Origin and Merlyn Display as finished classroom products and runs no
+    developer program at all — its 97-URL sitemap contains no developer, docs or API page, and
+    developer/docs/api.merlyn.org do not resolve; the only REST API it operates,
+    web.rest-api.merlyn.org, is an undocumented AWS API Gateway backing its own console and teacher
+    portal that answers every anonymous request with 403 "Missing Authentication Token".
+  evidence:
+  - url: https://www.merlyn.org/sitemap.xml
+    status: 200
+  - url: https://web.rest-api.merlyn.org/openapi.json
+    status: 403
+  - url: https://www.merlyn.org/llms.txt
+    status: 404
+  - url: https://www.merlyn.org/.well-known/api-catalog
+    status: 404
+  checked: '2026-08-25'

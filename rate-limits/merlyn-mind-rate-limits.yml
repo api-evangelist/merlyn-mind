@@ -1,0 +1,25 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://www.merlyn.org/sitemap.xml, https://www.merlyn.org/support and anonymous probes of
+  https://web.rest-api.merlyn.org
+limit_count: 0
+headers: []
+status_on_exhaustion: null
+note: >-
+  No rate limits are published, because no API is published. Merlyn Mind operates a real REST API
+  at https://web.rest-api.merlyn.org (an AWS API Gateway deployment referenced by its own
+  manage.merlyn.org and portal.merlyn.org applications), but it is not a developer product: it
+  carries no documentation, no reference, no spec, and every anonymous request returns
+  403 {"message":"Missing Authentication Token"}, so no throttling headers can be observed
+  without credentials. AWS API Gateway does apply account/stage throttling and, when exceeded,
+  returns 429 with {"message":"Too Many Requests"} — that is a platform default, NOT a Merlyn Mind
+  published limit, and it is deliberately not recorded as one here.
+rate_limits: []
+evidence:
+- url: https://web.rest-api.merlyn.org/
+  status: 403
+  note: '{"message":"Missing Authentication Token"} — no anonymous response headers to read'
+- url: https://www.merlyn.org/support
+  status: 200
+  note: support landing page; links only to Zendesk end-user help centers, no API reference

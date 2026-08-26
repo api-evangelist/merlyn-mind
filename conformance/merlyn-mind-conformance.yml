@@ -1,0 +1,71 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://trust.merlyn.org/ and https://www.merlyn.org/responsible-ai — Merlyn Mind's own
+  published compliance and responsible-AI statements.
+note: >-
+  Merlyn Mind publishes no machine-readable API contract, so none of the API-shaped conformance
+  assertions below could be derived from a spec — every one of them is recorded as unknown rather
+  than false where the absence of a contract makes the question unanswerable. What IS assertable
+  is the organizational compliance posture published on the trust center, and the education-sector
+  regulatory regime the company operates under. DOMAIN-STANDARD SIGNATURE: none found. Merlyn Mind
+  integrates with the Canvas LMS and with interactive-panel vendors, but publishes no evidence of a
+  1EdTech/IMS Global standard (LTI, OneRoster, Caliper, QTI), no Ed-Fi surface and no SIF surface.
+  Because domain_standard_conformance is reward-only, nothing is asserted here rather than
+  inventing an education-standard claim the company does not make.
+standards:
+- id: soc2
+  conforms: true
+  evidence: >-
+    SOC 2 listed as a certification on trust.merlyn.org, with a SOC 2 report available under
+    NDA/request. SOC 3 also listed.
+  source: https://trust.merlyn.org/
+- id: soc3
+  conforms: true
+  evidence: SOC 3 listed as a certification on trust.merlyn.org.
+  source: https://trust.merlyn.org/
+- id: gdpr
+  conforms: true
+  evidence: >-
+    GDPR listed on trust.merlyn.org; Merlyn Mind operates a DSAR intake page at
+    https://www.merlyn.org/dsar and publishes EU/UK customer terms of use.
+  source: https://trust.merlyn.org/
+- id: ferpa
+  conforms: true
+  evidence: >-
+    "We have implemented practices in accordance with FERPA" — Merlyn Mind Responsible AI page;
+    FERPA also listed on the trust center.
+  source: https://www.merlyn.org/responsible-ai
+- id: coppa
+  conforms: true
+  evidence: >-
+    "We have implemented practices in accordance with ... COPPA" — Merlyn Mind Responsible AI page;
+    COPPA also listed on the trust center.
+  source: https://www.merlyn.org/responsible-ai
+- id: iso27001
+  conforms: false
+  evidence: Not listed among the certifications published on the trust center.
+  source: https://trust.merlyn.org/
+- id: oauth2
+  conforms: unknown
+  evidence: >-
+    clogin.merlyn.org is an authentication host referenced by Merlyn's own applications, but it is
+    an AWS API Gateway that returns 403 to every anonymous request and publishes no
+    /.well-known/oauth-authorization-server, so the grant model cannot be established.
+  source: well-known/merlyn-mind-well-known.yml
+- id: oidc
+  conforms: unknown
+  evidence: >-
+    The trust center advertises SSO as a product security feature, but no OpenID Provider metadata
+    document is served on any Merlyn host (all /.well-known/openid-configuration probes missed).
+  source: well-known/merlyn-mind-well-known.yml
+- id: rfc9457
+  conforms: unknown
+  evidence: No published OpenAPI or error reference; the error envelope cannot be observed anonymously.
+  source: null
+- id: lti
+  conforms: unknown
+  evidence: >-
+    Merlyn integrates with the Canvas LMS (documented in the Merlyn Origin help center) but does not
+    state whether the integration is 1EdTech LTI or a proprietary Canvas API integration.
+  source: https://www.merlyn.org/blog/merlyn-quick-tips-canvas-integration

@@ -1,0 +1,164 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Anonymous HTTPS probes of /.well-known/* on every Merlyn Mind host discovered in this pass:
+  the marketing site (www.merlyn.org), the two Next.js applications (manage.merlyn.org,
+  portal.merlyn.org) and the two AWS API Gateway hosts referenced by those applications
+  (web.rest-api.merlyn.org, clogin.merlyn.org).
+note: >-
+  NOTHING WAS SERVED. Merlyn Mind publishes no /.well-known document on any host. www.merlyn.org
+  (Webflow) answers every /.well-known path with a 404 "Invalid .well-known request" page;
+  portal.merlyn.org answers 404 with its application shell; manage.merlyn.org answers 200 for
+  EVERY path with the same Next.js SPA shell, which is a catch-all soft-200 and NOT a document —
+  it is recorded as a miss. web.rest-api.merlyn.org and clogin.merlyn.org are AWS API Gateway
+  deployments that answer 403 {"message":"Missing Authentication Token"} to every anonymous
+  request, including /.well-known paths. No WellKnown, SecurityTxt, APICatalog or AgentCard
+  pointer is emitted from this probe, because no path returned a real document.
+hosts:
+- host: www.merlyn.org
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: manage.merlyn.org
+  note: >-
+    Every path returns HTTP 200 with the identical Next.js application shell (text/html).
+    This is an SPA catch-all, not a served document — treated as a miss.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    soft_200: true
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    soft_200: true
+- host: portal.merlyn.org
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: web.rest-api.merlyn.org
+  note: >-
+    AWS API Gateway. Every anonymous request returns 403 {"message":"Missing Authentication
+    Token"}, including the well-known paths.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: clogin.merlyn.org
+  note: >-
+    AWS API Gateway login host. Every anonymous request returns 403 {"message":"Missing
+    Authentication Token"}.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
