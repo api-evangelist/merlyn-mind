@@ -14,6 +14,17 @@ description: >-
   offices in New York, Irvine and Bangalore. Merlyn Mind publishes no public developer program:
   there is no developer portal, no API reference, no SDK and no machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/merlyn-mind/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/653ff772c8cabb196596168a/653ff772c8cabb196596191e_merlynorg.svg
 x-type: company
 x-source: harvest:secondary-market
