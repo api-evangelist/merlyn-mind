@@ -1,0 +1,14 @@
+{
+  "repo": "merlyn-mind",
+  "feeds": [
+    {
+      "source": "https://www.merlyn.org/",
+      "feed_url": "https://www.merlyn.org/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-30T22:33:40Z"
+}
