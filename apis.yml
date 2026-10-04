@@ -54,7 +54,7 @@ tags:
 - LLM
 - Voice Assistant
 - Classroom Technology
-- Machine-Learning
+- Machine Learning
 - Responsible AI
 tags_raw:
 - Company
@@ -67,6 +67,7 @@ tags_raw:
 - Classroom Technology
 - Machine Learning
 - Responsible AI
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
