@@ -75,6 +75,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/merlyn-mind-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/merlyn-mind-rate-limits.yml
 - type: Security
   url: security/merlyn-mind-vulnerability-disclosure.yml
 - type: VulnerabilityDisclosure
