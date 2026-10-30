@@ -64,5 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Merlyn Mind is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/merlyn-mind_stock/
+Merlyn Mind is a New York-based deep-tech generative AI company, founded in 2018, that builds domain-specific AI for K-12 education. Its products are Merlyn Origin, a software AI assistant that runs on a teacher's classroom computer, and Merlyn Display, the same assistant embedded in interactive flat panels from partners such as Promethean and Newline. The company trained its own education-specific large language models and published several of them openly on Hugging Face (merlyn-education-safety, merlyn-education-corpus-qa, merlyn-education-teacher-assistant), and runs an AI Labs research group that publishes at NeurIPS and other conferences. Merlyn integrates with classroom tooling including the Canvas LMS. Merlyn Mind was acquired by Mynd.ai, Inc. (NYSE American, MYND), the parent of Promethean, in a deal completed 9 September 2025, and continues to operate under the merlyn.org brand with offices in New York, Irvine and Bangalore. Merlyn Mind publishes no public developer program: there is no developer portal, no API reference, no SDK and no machine-readable contract.
+
+**Areas:** Company · Artificial Intelligence · Education · EdTech · K-12 · LLM · Voice Assistant · Classroom Technology · Machine Learning · Responsible AI
+
+## Merlyn Mind on APIs.io
+
+Everything profiled for Merlyn Mind is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/merlyn-mind/](https://apis.io/providers/merlyn-mind/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Merlyn Mind Domain Security](https://apis.io/security/merlyn-mind/merlyn-mind-domain-security/)
+- [Merlyn Mind Trust Center](https://apis.io/security/merlyn-mind/merlyn-mind-trust-center/)
+- [Merlyn Mind Vulnerability Disclosure](https://apis.io/security/merlyn-mind/merlyn-mind-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Merlyn Mind Plans Pricing](https://apis.io/plans/merlyn-mind/merlyn-mind-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Merlyn Mind Rate Limits](https://apis.io/rate-limits/merlyn-mind/merlyn-mind-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.merlyn.org/)
+- [Support](https://www.merlyn.org/support)
+- [Blog](https://www.merlyn.org/blogs)
+- [Terms of service](https://www.merlyn.org/terms-conditions)
+- [Privacy policy](https://www.merlyn.org/privacy-policy)
+- [GitHub](https://github.com/MerlynMind)
+
+## API Evangelist rating
+
+**Kin Score 20.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 43.4 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.3** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/merlyn-mind/](https://apis.io/providers/merlyn-mind/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Merlyn Mind: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/merlyn-mind/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
